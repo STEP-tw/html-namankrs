@@ -2,6 +2,12 @@
 <html style="height:100%">
   <head>
     <style>
+      body {
+        background: url("html-namankrs/images/backdrop.jpg");
+        background-size: cover;
+        height: 100%;
+        margin: 0px;
+      }
       ul li {
         display: inline;
       }
@@ -9,6 +15,49 @@
         font-size: 20px;
         width: 90%;
         height: 30px;
+      }
+      .width40{
+        width: 40px
+      }
+      .rightMargin40{
+        margin-right: 40px;
+      }
+      .noTopMargin{
+        margin-top:0;
+      }
+      .bottom10{
+        margin-bottom:10px;
+      }
+      .blockHeading{
+        font-size: 30px;font-family: sans-serif;margin-top: 0;
+      }
+      .styleRight{
+        float: right; color: white; margin-top: 10px;font-size: 17px;"
+      }
+      .button {
+        width: 25%;
+        height: 50px;
+        float: right;
+        margin-top: 15%;
+        padding: 10px;
+        background-color: rgb(240, 83, 83);
+        color: white;
+        border-radius: 10px;
+      }
+      .mainBlock {
+        background: white;
+        width: 28%;
+        height: 55%;
+        margin-left: 12%;
+        margin-top: 4%;
+        font-size: 20px;
+        padding: 2%;
+        border-radius: 10px;
+      }
+      .header {
+        display: inline-block;
+        width: 100%;
+        margin-top: 10px;
       }
     </style>
     <link
@@ -18,64 +67,49 @@
     />
     <title>airpnb</title>
   </head>
-  <body style="height:100%; margin: 0px">
-    <div
-      style="background:url('html-namankrs/images/backdrop.jpg'); height: 100%;"
-    >
-      <div style="display: inline-block; width: 100%; margin-top: 10px">
-        <ul>
-          <li>
-            <img
-              src="/html-namankrs/images/airbnb transparent.png"
-              style="width: 40px; "
-            />
-          </li>
-          <div
-            style="float: right; color: white; margin-top: 10px;font-size: 17px"
-          >
-            <b
-              ><li style="margin:40px">Become a host</li>
-              <li style="margin-right:40px">Help</li>
-              <li style="margin-right:40px">Sign up</li>
-              <li style="margin-right:40px">Log in</li></b
-            >
-          </div>
-        </ul>
-      </div>
-      <div
-        style="background: white;width: 28%; height: 55%;margin-left:12%;margin-top:4%;font-size: 20px;padding: 2% ;border-radius: 10px"
-      >
-        <form>
-          <p style="font-size: 30px;font-family: sans-serif;margin-top: 0">
-            Book unique homes and experiences
-          </p>
-          <p style="margin-bottom:10px">WHERE</p>
-          <p style="margin-top:0"><input type="text" value="Anywhere" /></p>
-          <table>
-            <tr>
-              <thead>
-                CHECK IN
-              </thead>
-              <thead>
-                CHECK OUT
-              </thead>
-            </tr>
-            <tr>
-              <td><input type="text" value="dd-mm-yyyy" /></td>
-              <td><input type="text" value="dd-mm-yyyy"</td>
-            </tr>
-          </table>
-
-          <p style="margin-bottom:10px">GUESTS</p>
-          <input type="text" value="GUESTS" />
-          <input
-            style="width:25%;height:50px ;float:right;margin-top:15%;padding: 10px;background-color:
-          rgb(240, 83, 83);color:white;border-radius: 10px"
-            type="button"
-            value="SEARCH"
+  <body>
+    <div class="header">
+      <ul>
+        <li>
+          <img
+            src="/html-namankrs/images/airbnb transparent.png"
+            class="width40"
           />
-        </form>
-      </div>
+        </li>
+        <div class="styleRight">
+          <b
+            ><li class="rightMargin40">Become a host</li>
+            <li class="rightMargin40">Help</li>
+            <li class="rightMargin40">Sign up</li>
+            <li class="rightMargin40">Log in</li></b
+          >
+        </div>
+      </ul>
+    </div>
+    <div class="mainBlock">
+      <form>
+        <p class="blockHeading">Book unique homes and experiences</p>
+        <p class="bottom10">WHERE</p>
+        <p class="noTopMargin"><input type="text" value="Anywhere" /></p>
+        <table>
+          <tr>
+            <thead>
+              CHECK IN
+            </thead>
+            <thead>
+              CHECK OUT
+            </thead>
+          </tr>
+          <tr>
+            <td><input type="text" value="dd-mm-yyyy" /></td>
+            <td><input type="text" value="dd-mm-yyyy"</td>
+          </tr>
+        </table>
+
+        <p class="bottom10">GUESTS</p>
+        <input type="text" value="GUESTS" />
+        <input class="button" type="button" value="SEARCH" />
+      </form>
     </div>
   </body>
 </html>
